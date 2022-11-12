@@ -1,38 +1,38 @@
-.App {
+
+.Navbar{
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558__340.jpg);
+}
+
+.Frontline{
+  background-color: rgb(136, 128, 17);
+  color: black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Helpline{
+  background-color: rgb(244, 233, 85);
+
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Infoline{
+  background-color: rgb(176, 166, 19);
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Workingline{
+  background-color: rgb(198, 188, 48);
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+Container{
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*[id]:before { 
+  /* display: block;  */
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
 }
