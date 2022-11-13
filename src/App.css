@@ -1,6 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 
-.Navbar{
-  background-image: url(https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558__340.jpg);
+
+.custom-link{
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+  bottom: 0;
+  border-radius: 2em;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.custom-link:hover {
+  height: 100%;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translate(-10px,10px);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.903);
+  font-weight: bold;
+}
+
+.custom-link:focus{
+  color: rgba(19, 5, 5, 0.903);
+}
+
+@keyframes navbar {
+  from{
+  
+  }
 }
 
 .Frontline{

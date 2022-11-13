@@ -3,10 +3,10 @@ import {Navbar ,Nav ,Container } from 'react-bootstrap';
 import { BrowserRouter } from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import "bootstrap/dist/js/bootstrap.min.js";
-import Frontline from './Frontline';
-import Infoline from './Infoline';
-import Workingline from './Workingline';
-import Helpline from './Helpline';
+import Frontline from '../Frontline';
+import Infoline from '../Infoline';
+import Workline from '../Workline';
+import Helpline from '../Helpline';
 
 export default function Header() {
   return (
@@ -22,19 +22,19 @@ export default function Header() {
           <Navbar.Toggle/>
           <Navbar.Collapse>
             <Nav>
-            <Nav.Link eventKey="1" as={Link} to="#Frontline">Frontline</Nav.Link>
-            <Nav.Link eventKey="2" as={Link} to="#Infoline">Infoline</Nav.Link>
-            <Nav.Link eventKey="3" as={Link} to="#Workingline">Workingline</Nav.Link>
-            <Nav.Link eventKey="4" as={Link} to="#Helpline">Helpline</Nav.Link>
+            <Nav.Link eventKey="1" as={Link} to="#Frontline" className="custom-link" title="Frontline">&nbsp;&nbsp;Frontline</Nav.Link>
+            <Nav.Link eventKey="2" as={Link} to="#Infoline" className="custom-link" title="Infoline">&nbsp;&nbsp;Infoline</Nav.Link>
+            <Nav.Link eventKey="3" as={Link} to="#Workline" className="custom-link" title="Workline">&nbsp;&nbsp;Workline</Nav.Link>
+            <Nav.Link eventKey="4" as={Link} to="#Helpline" className="custom-link" title="Helpline">&nbsp;&nbsp;Helpline</Nav.Link>
           </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Frontline/>
       <Infoline/>
-      <Workingline/>
+      <Workline/>
       <Helpline/>
       </BrowserRouter>
-    </div>
+      </div>
   )
 }
