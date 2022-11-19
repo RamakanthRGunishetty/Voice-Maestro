@@ -7,20 +7,30 @@
   bottom: 0;
   border-radius: 2em;
   transition: transform 0.3s ease-in-out;
-  color: white;
+  color: rgb(172, 250, 64);
 }
 
 .custom-link:hover {
   height: 100%;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: translate(-10px,10px);
-  background-color: white;
-  color: rgba(0, 0, 0, 0.903);
+  background-color: rgb(72, 253, 211);
+  color: rgba(15, 14, 14, 0.903);
   font-weight: bold;
 }
 
 .custom-link:focus{
-  color: rgba(19, 5, 5, 0.903);
+  color: rgba(105, 124, 136, 0.903);
+}
+.custom-link::after{
+  color: rgba(0, 0, 0, 0.903);
+}
+
+.image-bg {
+  min-width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes navbar {
