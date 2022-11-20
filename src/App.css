@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
 
 .custom-link{
   font-family: 'Source Code Pro', monospace;
@@ -7,14 +7,14 @@
   bottom: 0;
   border-radius: 2em;
   transition: transform 0.3s ease-in-out;
-  color: rgb(172, 250, 64);
+  color: rgb(255, 255, 255);
 }
 
 .custom-link:hover {
   height: 100%;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: translate(-10px,10px);
-  background-color: rgb(72, 253, 211);
+  background-color: rgb(196, 81, 227);
   color: rgba(15, 14, 14, 0.903);
   font-weight: bold;
 }
@@ -26,11 +26,39 @@
   color: rgba(0, 0, 0, 0.903);
 }
 
-.image-bg {
-  min-width: 100%;
-  max-width: 100%;
+.main-container{
+  background-image: url("./images/1.jpg");
+  height: auto;
   background-size: cover;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-front{
+  color: rgb(255, 255, 255);
+  font-family: 'Fragment Mono', monospace;
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 2px;
+  background-color: rgb(218, 83, 255);
+  box-shadow: 5px,5px,10px;
+  cursor: pointer;
+  bottom: 0;
+  border-radius: 2em;
+  border-style: none;
+  transition: transform 0.4s ease-in-out;
+  padding-left: 4em;
+  padding-right: 4em;
+  height: 50px;
+  width:auto;
+}
+
+.btn-front:hover{
+  transition-timing-function: ease-in-out;
+  transform: translate(-10px,10px);
+ }
+
+.btn-front:active{
+  background-color: rgb(165, 54, 196) ;
 }
 
 @keyframes navbar {
@@ -40,10 +68,14 @@
 }
 
 .Frontline{
-  background-color: rgb(136, 128, 17);
-  color: black;
-  text-align: center;
+  padding: 30em;
+  min-width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
 
 .Helpline{
   background-color: rgb(244, 233, 85);

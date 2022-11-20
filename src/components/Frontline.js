@@ -1,13 +1,11 @@
 import React from 'react';
-import img from '../images/design.png';
 
 const Frontline = () => {
   return (
+    <section className="main-container">
     <div className="Frontline" id="Frontline">
-      <img src={img} className='image-bg' alt = "background" /> 
-     Frontline<br/>
-
-    </div>
+          <button className="btn-front">Explore</button>
+    </div></section>
   );
 };
 
