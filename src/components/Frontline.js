@@ -1,11 +1,20 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Frontline = () => {
   return (
-    <section className="main-container">
-    <div className="Frontline" id="Frontline">
-          <button className="btn-front">Explore</button>
-    </div></section>
+    <Container className="main-container" fluid>
+      <Row>
+    <Col><div className="Frontline" id="Frontline">
+        <div className="Intro">
+          Welcome to Voice maestro
+        </div>
+          <button className="btn-exp">Get&nbsp;Started</button>
+      </div>
+  </Col>
+   </Row></Container>
   );
 };
 

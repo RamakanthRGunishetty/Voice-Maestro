@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 .custom-link{
   font-family: 'Source Code Pro', monospace;
   cursor: pointer;
@@ -30,34 +36,44 @@
   background-image: url("./images/1.jpg");
   height: auto;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.btn-front{
+.Intro{
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-family: 'Fragment Mono', monospace;
+  font-weight: bolder;
+  /* font-size: 80px; */
+}
+
+.btn-exp{
   color: rgb(255, 255, 255);
   font-family: 'Fragment Mono', monospace;
   font-weight: bold;
   font-size: larger;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background-color: rgb(218, 83, 255);
   box-shadow: 5px,5px,10px;
   cursor: pointer;
-  bottom: 0;
   border-radius: 2em;
   border-style: none;
   transition: transform 0.4s ease-in-out;
-  padding-left: 4em;
-  padding-right: 4em;
-  height: 50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 40px;
   width:auto;
+  margin-left: 600px;
 }
 
-.btn-front:hover{
+.btn-exp:hover{
   transition-timing-function: ease-in-out;
-  transform: translate(-10px,10px);
+  transform: translate(0px,2px);
  }
 
-.btn-front:active{
+.btn-exp:active{
   background-color: rgb(165, 54, 196) ;
 }
 
@@ -93,9 +109,6 @@
   text-align: center;
 }
 
-Container{
-  color: black;
-}
 
 *[id]:before { 
   /* display: block;  */
