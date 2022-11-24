@@ -7,7 +7,8 @@ const Frontline = () => {
   return (
     <Container className="main-container" fluid>
       <Row>
-    <Col><div className="Frontline" id="Frontline">
+    <Col>
+    <div className="Frontline" id="Frontline">
         <div className="Intro">
           Welcome to Voice maestro
         </div>

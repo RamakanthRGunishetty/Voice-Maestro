@@ -35,10 +35,18 @@
 .main-container{
   background-image: url("./images/1.jpg");
   height: auto;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container{
+    background-size: cover;
+    background-position: top 0 right 20%;
+    max-height: fit-content;
+  }
 }
 
 .Intro{
@@ -47,6 +55,14 @@
   font-family: 'Fragment Mono', monospace;
   font-weight: bolder;
   /* font-size: 80px; */
+}
+
+@media only screen and (min-width: 600px) {
+  .main-container{
+    background-size: cover;
+    background-position: top 0 right 40%;
+    max-height: fit-content;
+  }
 }
 
 .btn-exp{
@@ -65,7 +81,6 @@
   padding-right: 2em;
   height: 40px;
   width:auto;
-  margin-left: 600px;
 }
 
 .btn-exp:hover{
