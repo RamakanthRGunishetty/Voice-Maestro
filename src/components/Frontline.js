@@ -9,10 +9,10 @@ const Frontline = () => {
       <Row>
     <Col>
     <div className="Frontline" id="Frontline">
-        <div className="Intro">
+        {/* <div className="Intro">
           Welcome to Voice maestro
         </div>
-          <button className="btn-exp">Get&nbsp;Started</button>
+          <button className="btn-exp">Get&nbsp;Started</button> */}
       </div>
   </Col>
    </Row></Container>

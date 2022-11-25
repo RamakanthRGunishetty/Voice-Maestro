@@ -41,10 +41,10 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .main-container{
     background-size: cover;
-    background-position: top 0 right 20%;
+    background-position: top 0 right 45%;
     max-height: fit-content;
   }
 }
@@ -54,18 +54,17 @@
   letter-spacing: 2px;
   font-family: 'Fragment Mono', monospace;
   font-weight: bolder;
-  /* font-size: 80px; */
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 360px) {
   .main-container{
     background-size: cover;
-    background-position: top 0 right 40%;
+    background-position: 25% 75%;
     max-height: fit-content;
   }
 }
 
-.btn-exp{
+/* .btn-exp{
   color: rgb(255, 255, 255);
   font-family: 'Fragment Mono', monospace;
   font-weight: bold;
@@ -81,6 +80,15 @@
   padding-right: 2em;
   height: 40px;
   width:auto;
+} */
+
+@media only screen and (min-width: 768px) {
+  .main-container{
+    background-size: cover;
+    background-position: 25% 75%;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 .btn-exp:hover{
@@ -122,6 +130,24 @@
 .Workingline{
   background-color: rgb(198, 188, 48);
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) and (orientation:landscape) {
+  .main-container{
+    background-size: cover;
+    background-position: 25% 90%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .main-container{
+    background-size: cover;
+    background-position: right;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 
