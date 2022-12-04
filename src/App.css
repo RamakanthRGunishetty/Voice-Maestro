@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
-
-.custom-link{
+.custom-link {
   font-family: 'Source Code Pro', monospace;
   cursor: pointer;
   bottom: 0;
@@ -19,142 +10,39 @@
 .custom-link:hover {
   height: 100%;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translate(-10px,10px);
+  transform: translate(-10px, 10px);
   background-color: rgb(196, 81, 227);
   color: rgba(15, 14, 14, 0.903);
   font-weight: bold;
 }
 
-.custom-link:focus{
+.custom-link:focus {
   color: rgba(105, 124, 136, 0.903);
 }
-.custom-link::after{
+.custom-link::after {
   color: rgba(0, 0, 0, 0.903);
 }
 
-.main-container{
-  background-image: url("./images/1.jpg");
-  height: auto;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-@media only screen and (min-width: 375px) {
-  .main-container{
-    background-size: cover;
-    background-position: top 0 right 45%;
-    max-height: fit-content;
-  }
-}
-
-.Intro{
-  color: rgb(255, 255, 255);
-  letter-spacing: 2px;
-  font-family: 'Fragment Mono', monospace;
-  font-weight: bolder;
-}
-
-@media only screen and (max-width: 360px) {
-  .main-container{
-    background-size: cover;
-    background-position: 25% 75%;
-    max-height: fit-content;
-  }
-}
-
-/* .btn-exp{
-  color: rgb(255, 255, 255);
-  font-family: 'Fragment Mono', monospace;
-  font-weight: bold;
-  font-size: larger;
-  letter-spacing: 1px;
-  background-color: rgb(218, 83, 255);
-  box-shadow: 5px,5px,10px;
-  cursor: pointer;
-  border-radius: 2em;
-  border-style: none;
-  transition: transform 0.4s ease-in-out;
-  padding-left: 2em;
-  padding-right: 2em;
-  height: 40px;
-  width:auto;
-} */
-
-@media only screen and (min-width: 768px) {
-  .main-container{
-    background-size: cover;
-    background-position: 25% 75%;
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
-.btn-exp:hover{
-  transition-timing-function: ease-in-out;
-  transform: translate(0px,2px);
- }
-
-.btn-exp:active{
-  background-color: rgb(165, 54, 196) ;
-}
-
 @keyframes navbar {
-  from{
-  
+  from {
   }
 }
 
-.Frontline{
-  padding: 30em;
-  min-width: 100%;
-  max-width: 100%;
-  background-size: cover;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-
-
-.Helpline{
+.Helpline {
   background-color: rgb(244, 233, 85);
 
   text-align: center;
 }
 
-.Infoline{
+.Infoline {
   background-color: rgb(176, 166, 19);
   text-align: center;
 }
 
-.Workingline{
-  background-color: rgb(198, 188, 48);
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) and (orientation:landscape) {
-  .main-container{
-    background-size: cover;
-    background-position: 25% 90%;
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 371px) {
-  .main-container{
-    background-size: cover;
-    background-position: right;
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
-
-*[id]:before { 
+*[id]:before {
   /* display: block;  */
-  content: " "; 
-  margin-top: -75px; 
-  height: 75px; 
-  visibility: hidden; 
+  content: ' ';
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
 }

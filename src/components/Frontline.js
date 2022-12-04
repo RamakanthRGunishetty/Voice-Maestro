@@ -1,22 +1,23 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from 'react'
+import './Frontline.css'
 
 const Frontline = () => {
   return (
-    <Container className="main-container" fluid>
-      <Row>
-    <Col>
-    <div className="Frontline" id="Frontline">
-        {/* <div className="Intro">
-          Welcome to Voice maestro
+    <div className="Frontline" id="Frontline" fluid>
+      <div className="main-container">
+        <div className="Intro">
+          <span>Welcome</span>
+          <span>to</span>
+          <span>Voice Maestro</span>
         </div>
-          <button className="btn-exp">Get&nbsp;Started</button> */}
+        <div className="btn-get">
+          <span>
+            <button className="btn-exp">Get Started</button>
+          </span>
+        </div>
       </div>
-  </Col>
-   </Row></Container>
-  );
-};
+    </div>
+  )
+}
 
-export default Frontline;
+export default Frontline

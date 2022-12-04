@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  padding: 30em;
+  min-width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Frontline {
+  background-image: url('../images/1.jpg');
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 375px) {
+  .Frontline {
+    background-size: cover;
+    background-position: top 0 right 45%;
+    max-height: fit-content;
+  }
+}
+
+.Intro {
+  position: relative;
+  left: 15em;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5em;
+  font-size: 2rem;
+  font-family: 'Fragment Mono', monospace;
+  font-weight: bolder;
+  top: -10rem;
+}
+
+.Intro > span:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Intro > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Intro > span:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 360px) {
+  .Frontline {
+    background-size: cover;
+    background-position: 25% 75%;
+    max-height: fit-content;
+  }
+}
+
+.btn-exp {
+  color: rgb(255, 255, 255);
+  font-family: 'Fragment Mono', monospace;
+  font-weight: bold;
+  font-size: larger;
+  position: absolute;
+  letter-spacing: 1px;
+  background-color: rgb(218, 83, 255);
+  box-shadow: 5px, 5px, 10px;
+  cursor: pointer;
+  border-radius: 2em;
+  border-style: none;
+  transition: transform 0.4s ease-in-out;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 40px;
+  margin: 0 0px 0px 500pt;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  .Frontline {
+    background-size: cover;
+    background-position: 25% 75%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.btn-exp:hover {
+  transition-timing-function: ease-in-out;
+  transform: translate(0px, 2px);
+}
+
+.btn-exp:active {
+  background-color: rgb(165, 54, 196);
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .Frontline {
+    background-size: cover;
+    background-position: 25% 90%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .Frontline {
+    background-size: cover;
+    background-position: right;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
