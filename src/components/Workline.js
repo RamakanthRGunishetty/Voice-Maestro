@@ -1,14 +1,15 @@
 import React from 'react'
 import './Workline.css'
+import Mp3Recorder from './AudioRec/Audiorec'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/free-solid-svg-icons'
-import { faMicrophone } from '@fortawesome/free-solid-svg-icons'
 
 const Workline = (props) => {
   const hiddenFileInput = React.useRef(null)
 
   // Programatically click the hidden file input element
   // when the Button component is clicked
+
   const handleClick = (event) => {
     hiddenFileInput.current.click()
   }
@@ -34,6 +35,7 @@ const Workline = (props) => {
             <input
               type="file"
               ref={hiddenFileInput}
+              accept=".mp3"
               onChange={handleChange}
               style={{
                 display: 'none',
@@ -41,14 +43,9 @@ const Workline = (props) => {
             />
           </span>
           <h4>Or</h4>
-          <span>
-            <button id="rec-mic">
-              Record now
-              <span id="fa-mic">
-                <FontAwesomeIcon icon={faMicrophone} />
-              </span>
-            </button>
-          </span>
+          <center>
+            <Mp3Recorder />
+          </center>
         </div>
       </div>
     </div>
