@@ -1,29 +1,51 @@
 import React from 'react'
+import Form from 'react-bootstrap/Form'
+import './Helpline.css'
+import { FaAddressCard } from 'react-icons/fa'
 
 const Helpline = () => {
   return (
     <div className="Helpline" id="Helpline">
-     Helpline<br/>
-     "Looking back on a childhood filled with events and memories, I find it rather difficult to pick one that leaves me with the fabled 'warm and fuzzy feelings.' As the daughter of an Air Force major, I had the pleasure of traveling across America in many moving trips. I have visited the monstrous trees of the Sequoia National Forest, stood on the edge of the Grand Canyon and have jumped on the beds at Caesar's Palace in Lake Tahoe."
-
-"Looking for houses was supposed to be a fun and exciting process. Unfortunately, none of the ones that we saw seemed to match the specifications that we had established. They were too small, too impersonal, too close to the neighbors. After days of finding nothing even close, we began to wonder: was there really a perfect house out there for us?"
-
-"The day I picked my dog up from the pound was one of the happiest days of both of our lives. I had gone to the pound just a week earlier with the idea that I would just 'look' at a puppy. Of course, you can no more just look at those squiggling little faces so filled with hope and joy than you can stop the sun from setting in the evening. I knew within minutes of walking in the door that I would get a puppy… but it wasn't until I saw him that I knew I had found my puppy.""Looking back on a childhood filled with events and memories, I find it rather difficult to pick one that leaves me with the fabled 'warm and fuzzy feelings.' As the daughter of an Air Force major, I had the pleasure of traveling across America in many moving trips. I have visited the monstrous trees of the Sequoia National Forest, stood on the edge of the Grand Canyon and have jumped on the beds at Caesar's Palace in Lake Tahoe."
-
-"Looking for houses was supposed to be a fun and exciting process. Unfortunately, none of the ones that we saw seemed to match the specifications that we had established. They were too small, too impersonal, too close to the neighbors. After days of finding nothing even close, we began to wonder: was there really a perfect house out there for us?"
-
-"The day I picked my dog up from the pound was one of the happiest days of both of our lives. I had gone to the pound just a week earlier with the idea that I would just 'look' at a puppy. Of course, you can no more just look at those squiggling little faces so filled with hope and joy than you can stop the sun from setting in the evening. I knew within minutes of walking in the door that I would get a puppy… but it wasn't until I saw him that I knew I had found my puppy."
-"Looking back on a childhood filled with events and memories, I find it rather difficult to pick one that leaves me with the fabled 'warm and fuzzy feelings.' As the daughter of an Air Force major, I had the pleasure of traveling across America in many moving trips. I have visited the monstrous trees of the Sequoia National Forest, stood on the edge of the Grand Canyon and have jumped on the beds at Caesar's Palace in Lake Tahoe."
-
-"Looking for houses was supposed to be a fun and exciting process. Unfortunately, none of the ones that we saw seemed to match the specifications that we had established. They were too small, too impersonal, too close to the neighbors. After days of finding nothing even close, we began to wonder: was there really a perfect house out there for us?"
-
-"The day I picked my dog up from the pound was one of the happiest days of both of our lives. I had gone to the pound just a week earlier with the idea that I would just 'look' at a puppy. Of course, you can no more just look at those squiggling little faces so filled with hope and joy than you can stop the sun from setting in the evening. I knew within minutes of walking in the door that I would get a puppy… but it wasn't until I saw him that I knew I had found my puppy."
-
-"The day I picked my dog up from the pound was one of the happiest days of both of our lives. I had gone to the pound just a week earlier with the idea that I would just 'look' at a puppy. Of course, you can no more just look at those squiggling little faces so filled with hope and joy than you can stop the sun from setting in the evening. I knew within minutes of walking in the door that I would get a puppy… but it wasn't until I saw him that I knew I had found my puppy."
-
-"The day I picked my dog up from the pound was one of the happiest days of both of our lives. I had gone to the pound just a week earlier with the idea that I would just 'look' at a puppy. Of course, you can no more just look at those squiggling little faces so filled with hope and joy than you can stop the sun from setting in the evening. I knew within minutes of walking in the door that I would get a puppy… but it wasn't until I saw him that I knew I had found my puppy."
+      <div className="help">
+        <span id="fa-address">
+          <FaAddressCard />
+        </span>{' '}
+        Helpline
+      </div>
+      <br />
+      <div className="col-md-6">
+        <div className="col-md-3">
+          <Form>
+            <Form.Group className="col-12 col-md-3" controlId="name">
+              <Form.Label></Form.Label>
+              <Form.Control
+                id="form_control"
+                type="text"
+                size="text"
+                placeholder="Name"
+              />
+            </Form.Group>
+          </Form>
+        </div>
+        <div>
+          <Form>
+            <Form.Group
+              className="col-12 col-md-3"
+              controlId="exampleForm.ControlInput1"
+            >
+              <Form.Label></Form.Label>
+              <Form.Control
+                id="form_control"
+                type="email"
+                size="text"
+                placeholder="name@example.com"
+              />
+            </Form.Group>
+          </Form>
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Helpline;
+export default Helpline

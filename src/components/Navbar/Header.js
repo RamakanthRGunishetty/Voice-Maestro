@@ -1,12 +1,15 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Button } from 'react-bootstrap'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import 'bootstrap/dist/js/bootstrap.min.js'
+import './Header.css'
 import Frontline from '../Frontline'
 import Infoline from '../Infoline'
 import Workline from '../Workline'
 import Helpline from '../Helpline'
+import Log from '../login'
+// import Footer from '../Footer/Footer'
 
 export default function Header() {
   return (
@@ -19,6 +22,9 @@ export default function Header() {
           expand="lg"
           collapseOnSelect
         >
+          <Button className="d-none d-sm-block d-md-block d-lg-none">
+            Login
+          </Button>
           <Container>
             <Navbar.Brand href="#Frontline">
               <img
@@ -31,7 +37,7 @@ export default function Header() {
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
-              <Nav>
+              <Nav className="container-fluid">
                 <Nav.Link
                   eventKey="1"
                   as={Link}
@@ -69,6 +75,7 @@ export default function Header() {
                   &nbsp;&nbsp;Helpline
                 </Nav.Link>
               </Nav>
+              <Log />
             </Navbar.Collapse>
           </Container>
         </Navbar>

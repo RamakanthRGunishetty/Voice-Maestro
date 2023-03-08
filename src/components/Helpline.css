@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+  background-color: black;
+}
+
+.help {
+  color: azure;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#fa-address {
+  position: absolute;
+  top: 4px;
+  left: 43rem;
+}
+
+.help:hover {
+  color: aqua;
+  cursor: pointer;
+  transform: translate(-2px, 7px);
+}
+
+#form_control {
+  margin-left: 20px;
+  background-color: rgba(62, 61, 61, 0.589);
+  border: 0;
+}
+
+#form_control:focus {
+  border: rgb(37, 223, 226);
+}

@@ -26,7 +26,12 @@ const Workline = (props) => {
           <h2>Vocals to Music</h2>
           <span>Instanly ,convert vocals to any instrumental tones</span>
           <span>
-            <button onClick={handleClick}>
+            <button
+              onClick={handleClick}
+              className="btn-upload"
+              bg-gradient-primary
+              text-white
+            >
               Upload a file
               <span id="fa-fold">
                 <FontAwesomeIcon icon={faFolder} />
