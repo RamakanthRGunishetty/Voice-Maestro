@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import './partials/variables';
+@import './partials/circular-menu';
+
+body,
+html {
+  background-color: $dark-purple;
+  color: $dark-purple;
+  font-family: $primary-font;
+  font-size: $small-font-size;
+}
+
+.page-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}

@@ -10,8 +10,10 @@ import Workline from '../Workline'
 import Helpline from '../Helpline'
 import Log from '../login'
 // import Footer from '../Footer/Footer'
-
 export default function Header() {
+  const onButtonClick = () => {
+    return <Log />
+  }
   return (
     <div className="Navbar">
       <BrowserRouter>
@@ -22,7 +24,10 @@ export default function Header() {
           expand="lg"
           collapseOnSelect
         >
-          <Button className="d-none d-sm-block d-md-block d-lg-none">
+          <Button
+            className="d-none d-sm-block d-md-block d-lg-none"
+            onClick={onButtonClick}
+          >
             Login
           </Button>
           <Container>
@@ -75,7 +80,7 @@ export default function Header() {
                   &nbsp;&nbsp;Helpline
                 </Nav.Link>
               </Nav>
-              <Log />
+              {/* <Log /> */}
             </Navbar.Collapse>
           </Container>
         </Navbar>

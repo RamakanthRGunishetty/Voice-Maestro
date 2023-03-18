@@ -1,13 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Header from './components/Navbar/Header';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+
+import Header from './components/Navbar/Header'
 
 function App() {
   return (
     <div className="App">
-    <Header/>
+      <Header />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

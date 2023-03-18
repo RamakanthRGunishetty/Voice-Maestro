@@ -26,12 +26,53 @@ body {
   transform: translate(-2px, 7px);
 }
 
+.form {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-left: 30rem;
+  display: inline;
+}
+
 #form_control {
   margin-left: 20px;
-  background-color: rgba(62, 61, 61, 0.589);
+  background-color: rgba(62, 61, 61, 0.667);
   border: 0;
+  width: 25em;
+  color: greenyellow;
+  transition: transform 0.3s ease-in-out;
 }
 
 #form_control:focus {
   border: rgb(37, 223, 226);
+}
+
+#form_control:hover {
+  transform: translateX(20px);
+}
+
+#form_control_submit {
+  background-color: greenyellow;
+  color: rgba(29, 37, 15, 0.577);
+  font-family: 'Secular One', sans-serif;
+  font-size: large;
+  width: 20%;
+  margin-left: 10em;
+  transition: transform 0.3s ease-in-out;
+}
+
+#form_control_submit:hover {
+  background-color: rgba(172, 255, 47, 0.748);
+  color: azure;
+  transform: translate(0px, 2px);
+}
+
+/* .Social {
+} */
+
+.info {
+  color: azure;
 }
