@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import 'node_modules/sass-google-fonts/src/GoogleFonts.scss';
 @import './partials/variables';
 @import './partials/circular-menu';
+@import './Helpline.scss';
 
 body,
 html {

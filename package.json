@@ -39,6 +39,7 @@
     "reactjs-tailwind": "^0.1.9",
     "render-fragment": "^0.1.1",
     "sass": "^1.59.3",
+    "sass-google-fonts": "^1.0.1",
     "tailwindcss": "^3.2.7",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
