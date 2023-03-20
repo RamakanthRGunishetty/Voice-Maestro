@@ -1,5 +1,5 @@
 import React from 'react'
-import './Workline.css'
+import './Workline.scss'
 import Mp3Recorder from './AudioRec/Audiorec'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder } from '@fortawesome/free-solid-svg-icons'
@@ -19,38 +19,41 @@ const Workline = (props) => {
     const fileUploaded = event.target.files[0]
     props.handleFile(fileUploaded)
   }
+
   return (
     <div className="Workline" id="Workline" fluid>
-      <div className="Work-Container">
-        <div className="drop-card">
-          <h2>Vocals to Music</h2>
-          <span>Instanly ,convert vocals to any instrumental tones</span>
-          <span>
-            <button
-              onClick={handleClick}
-              className="btn-upload"
-              bg-gradient-primary
-              text-white
-            >
-              Upload a file
-              <span id="fa-fold">
-                <FontAwesomeIcon icon={faFolder} />
+      <div className="container h-100">
+        <div className="row justify-content-center align-items-center h-100">
+          <div className="col-md-6 col-lg-4">
+            <div className="drop-card">
+              <h2>Vocals to Music</h2>
+              <span>Instantly, convert vocals to any instrumental tones</span>
+              <span>
+                <button
+                  onClick={handleClick}
+                  className="btn btn-upload btn-primary"
+                >
+                  Upload a file
+                  <span id="fa-fold">
+                    <FontAwesomeIcon icon={faFolder} />
+                  </span>
+                </button>
+                <input
+                  type="file"
+                  ref={hiddenFileInput}
+                  accept=".mp3"
+                  onChange={handleChange}
+                  style={{
+                    display: 'none',
+                  }} /* Make the file input element invisible */
+                />
               </span>
-            </button>
-            <input
-              type="file"
-              ref={hiddenFileInput}
-              accept=".mp3"
-              onChange={handleChange}
-              style={{
-                display: 'none',
-              }} /* Make the file input element invisible */
-            />
-          </span>
-          <h4>Or</h4>
-          <center>
-            <Mp3Recorder />
-          </center>
+              <h4>Or</h4>
+              <center>
+                <Mp3Recorder />
+              </center>
+            </div>
+          </div>
         </div>
       </div>
     </div>
