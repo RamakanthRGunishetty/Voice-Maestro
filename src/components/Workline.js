@@ -21,39 +21,34 @@ const Workline = (props) => {
   }
 
   return (
-    <div className="Workline" id="Workline" fluid>
-      <div className="container h-100">
-        <div className="row justify-content-center align-items-center h-100">
-          <div className="col-md-6 col-lg-4">
-            <div className="drop-card">
-              <h2>Vocals to Music</h2>
-              <span>Instantly, convert vocals to any instrumental tones</span>
-              <span>
-                <button
-                  onClick={handleClick}
-                  className="btn btn-upload btn-primary"
-                >
-                  Upload a file
-                  <span id="fa-fold">
-                    <FontAwesomeIcon icon={faFolder} />
-                  </span>
-                </button>
-                <input
-                  type="file"
-                  ref={hiddenFileInput}
-                  accept=".mp3"
-                  onChange={handleChange}
-                  style={{
-                    display: 'none',
-                  }} /* Make the file input element invisible */
-                />
+    <div className="Workline d-flex justify-content-center align-items-center h-100">
+      <div className="col-md-6 col-lg-4">
+        <div className="drop-card d-flex flex-column justify-content-center align-items-center">
+          <h2>Vocals to Music</h2>
+          <span className="descript">
+            Instantly, convert vocals to any instrumental tones
+          </span>
+          <span>
+            <button onClick={handleClick} className="btn" id="rec-mic">
+              Upload a file
+              <span id="fa-fold">
+                <FontAwesomeIcon icon={faFolder} />
               </span>
-              <h4>Or</h4>
-              <center>
-                <Mp3Recorder />
-              </center>
-            </div>
-          </div>
+              <input
+                type="file"
+                ref={hiddenFileInput}
+                accept=".mp3"
+                onChange={handleChange}
+                style={{
+                  display: 'none',
+                }} /* Make the file input element invisible */
+              />
+            </button>
+          </span>
+          <h4>Or</h4>
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <Mp3Recorder />
         </div>
       </div>
     </div>
