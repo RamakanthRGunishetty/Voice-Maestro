@@ -6,126 +6,148 @@
   padding: 0;
 }
 
-.main-container {
-  padding: 30em;
-  min-width: 100%;
-  max-width: 100%;
-  background-size: cover;
-  position: relative;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
 .Frontline {
-  background-image: url('../images/1.jpg');
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
   width: 100%;
+  background-image: url('../images/8d.png');
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-@media only screen and (min-width: 375px) {
-  .Frontline {
-    background-size: cover;
-    background-position: top 0 right 45%;
-    max-height: fit-content;
+.Artists {
+  flex: 6;
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+.art {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10rem;
+  animation: slideInLeft 1s ease;
+  transition: transform 0.4s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
+.main-container {
+  flex: 2;
+  padding: 2rem;
+}
+
 .Intro {
-  position: relative;
-  left: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   letter-spacing: 0.5em;
   font-size: 2rem;
   font-family: 'Fragment Mono', monospace;
   font-weight: bolder;
-  top: -10rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.Intro > span:nth-child(1) {
+.Intro span {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  margin: 0.5rem;
+  line-height: 1;
+  animation: fadeIn 2s ease;
 }
 
-.Intro > span:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.Intro span:nth-child(2) {
+  transform: translateY(-50%);
 }
 
-.Intro > span:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-@media only screen and (max-width: 360px) {
-  .Frontline {
-    background-size: cover;
-    background-position: 25% 75%;
-    max-height: fit-content;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-get {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .btn-exp {
   color: rgb(255, 255, 255);
   font-family: 'Fragment Mono', monospace;
   font-weight: bold;
-  font-size: larger;
-  position: absolute;
+  font-size: 2rem;
   letter-spacing: 1px;
   background-color: rgb(218, 83, 255);
-  box-shadow: 5px, 5px, 10px;
+  box-shadow: 5px 5px 10px;
   cursor: pointer;
   border-radius: 2em;
   border-style: none;
   transition: transform 0.4s ease-in-out;
-  padding-left: 2em;
-  padding-right: 2em;
-  height: 40px;
-  margin: 0 0px 0px 500pt;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 768px) {
-  .Frontline {
-    background-size: cover;
-    background-position: 25% 75%;
-    max-height: 100%;
-    max-width: 100%;
-  }
+  padding: 1rem 2rem;
+  height: 4rem;
 }
 
 .btn-exp:hover {
-  transition-timing-function: ease-in-out;
-  transform: translate(0px, 2px);
+  transform: scale(1.1);
 }
 
-.btn-exp:active {
-  background-color: rgb(165, 54, 196);
-}
-
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) {
   .Frontline {
-    background-size: cover;
-    background-position: 25% 90%;
-    max-height: 100%;
-    max-width: 100%;
+    flex-direction: column;
+    height: auto;
   }
-}
 
-@media only screen and (max-width: 371px) {
-  .Frontline {
-    background-size: cover;
-    background-position: right;
-    max-height: 100%;
-    max-width: 100%;
+  .Artists {
+    order: 2;
+    margin-top: 1rem;
+    size: 20rem;
+  }
+
+  .main-container {
+    order: 1;
+    padding: 1rem;
+  }
+
+  .Intro {
+    font-size: 1.5rem;
+    flex-direction: column;
+    color: black;
+    margin-top: 35rem;
+    margin-bottom: 1rem;
+  }
+
+  .Intro span {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .btn-get {
+    margin-top: 1rem;
+  }
+
+  .btn-exp {
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 3rem;
   }
 }
