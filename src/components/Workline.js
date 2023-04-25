@@ -2,7 +2,7 @@ import React from 'react'
 import './Workline.scss'
 import Mp3Recorder from './AudioRec/Audiorec'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFolder } from '@fortawesome/free-solid-svg-icons'
+import { faFolder, faMusic } from '@fortawesome/free-solid-svg-icons'
 
 const Workline = (props) => {
   const hiddenFileInput = React.useRef(null)
@@ -21,14 +21,38 @@ const Workline = (props) => {
   }
 
   return (
-    <div className="Workline d-flex justify-content-center align-items-center h-100">
+    <div
+      className="Workline d-flex justify-content-center align-items-center"
+      id="Workline"
+    >
       <div className="col-md-6 col-lg-4">
         <div className="drop-card d-flex flex-column justify-content-center align-items-center">
-          <h2>Vocals to Music</h2>
-          <span className="descript">
+          <h2
+            className="mt-4"
+            style={{
+              color: '#eca644',
+              fontWeight: 'inherit',
+              fontFamily: 'Prompt',
+            }}
+          >
+            Vocals to Music{' '}
+            <span style={{ color: '#f18701' }} className="fa-music">
+              <FontAwesomeIcon icon={faMusic} size="2xs" />
+            </span>
+            <span style={{ color: '#ff9e00' }} className="fa-music">
+              <FontAwesomeIcon icon={faMusic} size="xs" pull="right" />
+            </span>
+            <span
+              style={{ paddingLeft: '10px', color: '#ff9100' }}
+              className="fa-music"
+            >
+              <FontAwesomeIcon icon={faMusic} size="2xs" />
+            </span>
+          </h2>
+          <span className="descript mt-4" style={{ color: '#f4f4f4' }}>
             Instantly, convert vocals to any instrumental tones
           </span>
-          <span>
+          <span className="mt-3">
             <button onClick={handleClick} className="btn" id="rec-mic">
               Upload a file
               <span id="fa-fold">
@@ -45,7 +69,7 @@ const Workline = (props) => {
               />
             </button>
           </span>
-          <h4>Or</h4>
+          <h5 style={{ color: '#f4f4f4' }}>Or</h5>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center">
           <Mp3Recorder />

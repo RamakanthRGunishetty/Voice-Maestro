@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, Container, Button } from 'react-bootstrap'
+import { Navbar, Nav, Container } from 'react-bootstrap'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import 'bootstrap/dist/js/bootstrap.min.js'
@@ -8,12 +8,10 @@ import Frontline from '../Frontline'
 import Infoline from '../Infoline'
 import Workline from '../Workline'
 import Helpline from '../Helpline'
-import Log from '../login'
+// import Log from '../login'
 // import Footer from '../Footer/Footer'
+
 export default function Header() {
-  const onButtonClick = () => {
-    return <Log />
-  }
   return (
     <div className="Navbar">
       <BrowserRouter>
@@ -24,12 +22,6 @@ export default function Header() {
           expand="lg"
           collapseOnSelect
         >
-          <Button
-            className="d-none d-sm-block d-md-block d-lg-none"
-            onClick={onButtonClick}
-          >
-            Login
-          </Button>
           <Container>
             <Navbar.Brand href="#Frontline">
               <img
@@ -80,7 +72,6 @@ export default function Header() {
                   &nbsp;&nbsp;Helpline
                 </Nav.Link>
               </Nav>
-              {/* <Log /> */}
             </Navbar.Collapse>
           </Container>
         </Navbar>

@@ -1,12 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 .Workline {
   height: 100vh;
   background-color: #f4f4f4;
   background-image: url('../images/working1.png');
   background-size: cover;
   background-position: center;
+  // line-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .fa-music {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+  }
+
+  span:nth-child(1) .fa-music {
+    animation-name: bounce-left;
+  }
+
+  span:nth-child(2) .fa-music {
+    animation-name: bounce-center;
+  }
+
+  span:nth-child(3) .fa-music {
+    animation-name: bounce-right;
+  }
+
+  @keyframes bounce-left {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounce-center {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
   .Work-Container {
     max-width: 800px;
@@ -23,10 +80,6 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-
-      h2 {
-        color: #d1722a;
-      }
 
       #rec-mic {
         color: rgb(255, 255, 255);
@@ -79,7 +132,7 @@
         }
 
         span {
-          font-size: 1rem;
+          font-size: 0.5rem;
         }
 
         #rec-mic {
@@ -104,7 +157,7 @@
         }
 
         span {
-          font-size: 1rem;
+          font-size: 0.5rem;
         }
 
         #rec-mic {
