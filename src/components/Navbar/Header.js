@@ -10,6 +10,7 @@ import Workline from '../Workline'
 import Helpline from '../Helpline'
 // import Log from '../login'
 // import Footer from '../Footer/Footer'
+import Footer from '../Foot/Footer'
 
 export default function Header() {
   return (
@@ -79,6 +80,7 @@ export default function Header() {
         <Infoline />
         <Workline />
         <Helpline />
+        <Footer />
       </BrowserRouter>
     </div>
   )
