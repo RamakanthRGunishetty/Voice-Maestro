@@ -1,30 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .footer {
-  background-color: #111;
-  color: #fff;
+  background-color: #14213d;
   padding: 40px;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container {
   position: relative;
-}
-
-.music-note {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: musicNote 2s linear infinite;
-}
-
-.note {
-  display: inline-block;
-  width: 10px;
-  height: 30px;
-  background-color: #ff5500;
-  margin: 0 5px;
-  transform: translateY(0);
-  animation: noteAnimation 0.5s ease-in-out alternate infinite;
 }
 
 .content {
@@ -44,50 +28,61 @@
 }
 
 .footer-links li {
-  display: inline-block;
+  display: inline;
   margin: 0 10px;
 }
 
 .footer-links a {
-  color: #fff;
+  background-color: #14213d;
+  color: #fff6f6;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: transform 250ms;
 }
 
 .footer-links a:hover {
-  color: #ff5500;
+  text-decoration: underline;
+  transform: translateY(-2px);
 }
 
-.social-media {
-  margin-top: 30px;
+.copy {
+  background-color: #14213d;
+  color: #fff6f6;
 }
 
-.social-media a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 10px;
+.text {
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+}
+.social-container {
+  background-color: #14213d;
+  padding: 25px 50px;
 }
 
-.social-media a:hover {
-  color: #ff5500;
+.follow {
+  color: lightgray;
 }
 
-@keyframes musicNote {
-  0% {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) rotate(360deg);
-  }
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
 }
 
-@keyframes noteAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: rgb(247, 129, 245);
 }
