@@ -32,26 +32,34 @@ function Footer() {
       <div class="social-container">
         <h3 className="follow">Follow us</h3>
         <a
-          href="https://www.youtube.com/c/jamesqquick"
+          href="https://www.youtube.com"
           className="youtube social"
+          target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} size="2x" />
         </a>
         <a
-          href="https://www.facebook.com/learnbuildteach/"
+          href="https://www.facebook.com"
           className="facebook social"
+          target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
         <a
-          href="https://www.twitter.com/jamesqquick"
+          href="https://www.twitter.com"
           className="twitter social"
+          target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faTwitter} size="2x" />
         </a>
         <a
-          href="https://www.instagram.com/learnbuildteach"
+          href="https://www.instagram.com"
           className="instagram social"
+          target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>

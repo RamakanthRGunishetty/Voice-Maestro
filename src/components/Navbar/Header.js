@@ -8,6 +8,7 @@ import Frontline from '../Frontline'
 import Infoline from '../Infoline'
 import Workline from '../Workline'
 import Helpline from '../Helpline'
+import logo from './assets/logo-white-removebg-preview.png'
 // import Log from '../login'
 // import Footer from '../Footer/Footer'
 import Footer from '../Foot/Footer'
@@ -25,13 +26,7 @@ export default function Header() {
         >
           <Container>
             <Navbar.Brand href="#Frontline">
-              <img
-                src="https://thumbs.dreamstime.com/b/rainbow-piano-480497.jpg"
-                alt="Logo"
-                width="40px"
-                height="40px"
-              />{' '}
-              Navbar
+              <img src={logo} alt="Logo" width="" height="40px" />{' '}
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
