@@ -30,7 +30,7 @@ function Footer() {
         </nav>
       </div>
       <div class="social-container">
-        <h3 className="follow">Follow us</h3>
+        <h3 className="follow">Follow On</h3>
         <a
           href="https://www.youtube.com"
           className="youtube social"
