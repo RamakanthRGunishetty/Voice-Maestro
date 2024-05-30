@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+.Workline {
+  height: 100vh;
+  background-color: #f4f4f4;
+  background-image: url('../images/working1.png');
+  background-size: cover;
+  background-position: center;
+  // line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .fa-music {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+  }
+
+  span:nth-child(1) .fa-music {
+    animation-name: bounce-left;
+  }
+
+  span:nth-child(2) .fa-music {
+    animation-name: bounce-center;
+  }
+
+  span:nth-child(3) .fa-music {
+    animation-name: bounce-right;
+  }
+
+  @keyframes bounce-left {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounce-center {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .Work-Container {
+    max-width: 800px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .drop-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      #rec-mic {
+        color: rgb(255, 255, 255);
+        background: #e2711d;
+        width: 15rem;
+        font-size: 1.3rem;
+        border-radius: 1.5rem;
+        position: relative;
+        line-height: 2;
+        cursor: pointer;
+
+        &:focus {
+          background: #cc5803;
+        }
+
+        &:hover {
+          background-color: #d1722a;
+        }
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin: 0 0 20px 0;
+        color: #e2711d;
+      }
+
+      span {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      #fa-fold {
+        margin-left: 40px;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Work-Container {
+      padding: 30px;
+
+      .drop-card {
+        h2 {
+          font-size: 2rem;
+        }
+
+        span {
+          font-size: 0.5rem;
+        }
+
+        #rec-mic {
+          font-size: 1rem;
+          width: 12rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .Work-Container {
+      padding: 20px;
+
+      .drop-card {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        span {
+          font-size: 0.5rem;
+        }
+
+        #rec-mic {
+          font-size: 0.9rem;
+          width: 10rem;
+        }
+
+        h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "music-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "^1.12.0",
+    "@bcwdev/auth0provider": "^1.0.13",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "audio-react-recorder": "^1.0.4",
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.2",
+    "firebase": "^9.15.0",
+    "jquery": "^3.6.4",
+    "mdb-react-ui-kit": "^5.1.0",
+    "mic-recorder-to-mp3": "^2.2.2",
+    "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-authentication-context": "^1.0.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^18.2.0",
+    "react-fontawesome": "^1.7.1",
+    "react-google-button": "^0.7.2",
+    "react-icons": "^4.6.0",
+    "react-native": "^0.70.6",
+    "react-radial-menu": "^1.0.0",
+    "react-responsive-background": "^1.5.0",
+    "react-router-dom": "^6.4.3",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.8",
+    "react-tinder-card": "^1.6.2",
+    "reactjs-tailwind": "^0.1.9",
+    "render-fragment": "^0.1.1",
+    "sass": "^1.59.3",
+    "sass-google-fonts": "^1.0.1",
+    "tailwindcss": "^3.2.7",
+    "tone": "^14.7.77",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^10.4.1"
+  }
+}
