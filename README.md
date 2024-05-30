@@ -1,3 +1,5 @@
+<script type="text/javascript" src="/path/to/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/path/to/jquery.videoController.min.js"></script>
 # Voice Maestro
 
 Voice Maestro is an innovative real-time audio processing system that converts live human vocals into musical instrument sounds. This project showcases the integration of digital signal processing techniques and deep learning models into a user-friendly React interface.
@@ -12,14 +14,10 @@ Voice Maestro is an innovative real-time audio processing system that converts l
 
 Watch the demo video to see Voice Maestro in action:
 
-<video width="600" controls>
-  <source src="./react-app.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<body>
+	<iframe id="my-video" src="./react-app.mp4" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+</body>
 
-Watch the demo video to see Voice Maestro in action:
-
-[![Voice Maestro Demo](./react-app.mp4)]
 ## Installation
 
 To run this project locally, follow these steps:
