@@ -12,7 +12,10 @@ Voice Maestro is an innovative real-time audio processing system that converts l
 
 Watch the demo video to see Voice Maestro in action:
 
-[![Voice Maestro Demo](./workline.png)](./react-app.mp4)
+<video width="600" controls>
+  <source src="./react-app.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 > Note: Replace `path/to/thumbnail.jpg` with the path to the thumbnail image of your video and `path/to/demo_video.mp4` with the path to your actual video file. If you plan to upload the video to a platform like YouTube, use the YouTube link here.
 
