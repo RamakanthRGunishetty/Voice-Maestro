@@ -16,6 +16,10 @@ Watch the demo video to see Voice Maestro in action:
   <source src="./react-app.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+Watch the demo video to see Voice Maestro in action:
+
+[![Voice Maestro Demo](./react-app.mp4)]
 ## Installation
 
 To run this project locally, follow these steps:
