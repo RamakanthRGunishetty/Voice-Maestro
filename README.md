@@ -10,7 +10,8 @@ Voice Maestro is an innovative real-time audio processing system that converts l
 
 ## Demo Video
 
-Watch the demo video to see Voice Maestro in action:
+**Watch the demo video to see Voice Maestro in action:**
+
 [![Voice Maestro Demo](./workline.png)](./react-app.mp4)
 
 ## Installation
