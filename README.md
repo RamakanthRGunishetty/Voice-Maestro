@@ -30,8 +30,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/voice-maestro.git
-   cd voice-maestro
+   git clone [https://github.com/RamakanthRGunishetty]/Voice-Maestro.git
+   cd Voice-Maestro
    ```
 
 2. **Install Node.js dependencies:**
