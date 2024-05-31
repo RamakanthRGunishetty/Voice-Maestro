@@ -80,4 +80,4 @@ We welcome contributions to enhance Voice Maestro. To contribute:
 
 ## Contact
 
-For questions or feedback, please reach out to us at [ramakanthrg2003@gmail.com](mailto:ramakanthrg2003@gmail.com).
+For questions or feedback, please reach out to me at [ramakanthrg2003@gmail.com](mailto:ramakanthrg2003@gmail.com).
