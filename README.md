@@ -70,7 +70,7 @@ The React front-end ensures a smooth and interactive user experience. The real-t
 
 ## Contributing
 
-We welcome contributions to enhance Voice Maestro. To contribute:
+I welcome contributions to enhance Voice Maestro. To contribute:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
