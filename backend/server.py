@@ -46,14 +46,11 @@ def convert_to_instrument():
         pitch_shift_amount = pitch_shift_amounts[target_instrument]
         y_shifted = librosa.effects.pitch_shift(y, sr=sr, n_steps=pitch_shift_amount)
 
-        # Generate output file path
         output_file = f"output_{os.path.splitext(input_audio.filename)[0]}_{target_instrument}.wav"
         output_file_path = os.path.join(OUTPUT_DIR, output_file)
 
-        # Save the synthesized audio
         sf.write(output_file_path, y_shifted, sr)
 
-        # Return the path to the converted audio file
         return jsonify({"message": "Audio converted successfully", "output_file": output_file_path}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
