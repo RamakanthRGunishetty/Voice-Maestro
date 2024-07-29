@@ -24,6 +24,7 @@ To run this project locally, follow these steps:
 - Python and pip
 - librosa library
 - React.js
+- SASS(Syntactically Awesome Stylesheet)
 
 ### Steps
 
