@@ -20,11 +20,11 @@ To run this project locally, follow these steps:
 
 ### Prerequisites
 
-- Node.js and npm
-- Python and pip
-- librosa library
 - React.js
 - SASS(Syntactically Awesome Stylesheet)
+- Node.js and npm
+- Python Flask
+- librosa
 
 ### Steps
 
