@@ -6,6 +6,17 @@
   padding: 0;
 }
 
+$primary-color: rgb(255, 255, 255);
+$secondary-color: rgb(218, 83, 255);
+$font-family: 'Fragment Mono', monospace;
+$transition-time: 0.4s;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Frontline {
   display: flex;
   flex-direction: row;
@@ -17,6 +28,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .Artists {
@@ -24,6 +40,12 @@
   display: flex;
   margin-top: 10rem;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    order: 2;
+    margin-top: 1rem;
+    size: 20rem;
+  }
 }
 
 .art {
@@ -31,7 +53,7 @@
   height: auto;
   margin-top: 10rem;
   animation: slideInLeft 1s ease;
-  transition: transform 0.4s ease-in-out;
+  transition: transform $transition-time ease-in-out;
 }
 
 @keyframes slideInLeft {
@@ -46,6 +68,11 @@
 .main-container {
   flex: 2;
   padding: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    order: 1;
+    padding: 1rem;
+  }
 }
 
 .Intro {
@@ -53,26 +80,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: $primary-color;
   letter-spacing: 0.5em;
   font-size: 2rem;
-  font-family: 'Fragment Mono', monospace;
+  font-family: $font-family;
   font-weight: bolder;
   margin-bottom: 2rem;
   text-align: center;
-}
 
-.Intro span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem;
-  line-height: 1;
-  animation: fadeIn 2s ease;
-}
+  span {
+    @include flex-center;
+    margin: 0.5rem;
+    line-height: 1;
+    animation: fadeIn 2s ease;
 
-.Intro span:nth-child(2) {
-  transform: translateY(-50%);
+    &:nth-child(2) {
+      transform: translateY(-50%);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    flex-direction: column;
+    color: black;
+    margin-top: 35rem;
+    margin-bottom: 1rem;
+
+    span {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @keyframes fadeIn {
@@ -85,67 +123,34 @@
 }
 
 .btn-get {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
 }
 
 .btn-exp {
-  color: rgb(255, 255, 255);
-  font-family: 'Fragment Mono', monospace;
+  color: $primary-color;
+  font-family: $font-family;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 1px;
-  background-color: rgb(218, 83, 255);
+  background-color: $secondary-color;
   box-shadow: 5px 5px 10px;
   cursor: pointer;
   border-radius: 2em;
   border-style: none;
-  transition: transform 0.4s ease-in-out;
+  transition: transform $transition-time ease-in-out;
   padding: 1rem 2rem;
   height: 4rem;
-}
 
-.btn-exp:hover {
-  transform: scale(1.1);
-}
-
-@media only screen and (max-width: 768px) {
-  .Frontline {
-    flex-direction: column;
-    height: auto;
+  &:hover {
+    transform: scale(1.1);
   }
 
-  .Artists {
-    order: 2;
-    margin-top: 1rem;
-    size: 20rem;
-  }
-
-  .main-container {
-    order: 1;
-    padding: 1rem;
-  }
-
-  .Intro {
-    font-size: 1.5rem;
-    flex-direction: column;
-    color: black;
-    margin-top: 35rem;
-    margin-bottom: 1rem;
-  }
-
-  .Intro span {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .btn-get {
-    margin-top: 1rem;
-  }
-
-  .btn-exp {
+  @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
     padding: 1rem;
     height: 3rem;
