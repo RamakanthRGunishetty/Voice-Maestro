@@ -7,7 +7,6 @@ import soundfile as sf
 app = Flask(__name__)
 CORS(app)
 
-# Set the correct path for the converted_audio directory
 OUTPUT_DIR = os.path.join('converted_audio')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
